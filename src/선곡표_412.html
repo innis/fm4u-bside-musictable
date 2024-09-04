@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>선곡표</title>
+    <link rel='stylesheet' href='https://font.imbc.com/nanumgothic/nanumgothic.css'>
+    <link rel="stylesheet" href="/css/musicstyle.css">
+    <link rel="stylesheet" href="/Content/PagedList.css" />
+    <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+    <script src="https://www.imbc.com/commons/libs/jquery-1.12.3.min.js"></script>
+    <script src="/js/jquery-ui.js"></script>
+    <script src="https://www.imbc.com/commons/libs/css_browser_selector.min.js"></script>
+    <script type='text/javascript' src='https://www.imbc.com/commons/nlogger/nlogger.js' charset='utf-8'></script>
+
+    <!--[if lt IE 9]><script src="http://www.imbc.com/commons/libs/html5shiv.min.js"></script><![endif]-->
+    <script type="text/javascript">
+        document.domain = "imbc.com";
+
+        $(document).ready(function () {
+            //$('#datePicker0, #datePicker1').datepicker({
+            //    dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'],
+            //    monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            //    dateFormat: 'yy.mm.dd',
+            //    showOtherMonths: true,
+            //    changeMonth: true,
+            //    selectOtherMonths: true,
+            //    required: true,
+            //    numberOfMonths: 1,
+            //    changeMonth: true,
+            //    changeYear: true,
+            //    showOn: "both",
+            //    buttonImage: "../images/ico-calendar.png",
+            //    buttonImageOnly: true,
+            //    prevText: "이전 월", // ◀ 접근성 관련 추가
+            //    nextText: "다음 월", // ◀ 접근성 관련 추가
+            //    buttonText: "달력 보기" // ◀ 접근성 관련 추가
+            //});
+        });
+    </script>
+</head>
+
+<body>
+    <div id="musicWrap">
+        
+
+
+
+<div id="musicView" class="music-view">
+    <div class="view-area">
+        <div class="view-title color-line color-bg2">
+            <p class="title">2022년 3월 1일 화요일</p>2022-03-01
+        </div>
+    </div>
+    <div class="list-noti" style="margin-bottom:28px">
+        <p style="font-size:12px;text-align:center">* MBC의 동의 없는 선곡 콘텐츠의 상업적 이용을 금합니다.</p>
+    </div>
+    
+<table class="list-type">
+    <caption>선곡표 내용 검색 결과(제목, 내용)</caption>
+    <colgroup>
+        <col width="15.4%" />
+        <col width="auto" />
+        <col width="20%" />
+        <col width="15.42%" />
+    </colgroup>
+    <thead class="color-bg color-txt2">
+        <tr>
+            <th scope="col">번호</th>
+            <th scope="col">곡명</th>
+            <th scope="col">가수</th>
+            <th scope="col">설명</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>1</td>
+                <td><p class="title">s&#39;Rothe-Zauerli (B기도문)</p></td>
+                <td><p class="singer">Ose Schuppel</p></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><p class="title">Tell Me It&#39;s Not Over (타이틀 뮤직)</p></td>
+                <td><p class="singer">Starsailor</p></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><p class="title">I Wonder</p></td>
+                <td><p class="singer">Rodriguez</p></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><p class="title">뭘 잘못한 걸까요</p></td>
+                <td><p class="singer">장기하</p></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><p class="title">Destroyer</p></td>
+                <td><p class="singer">Of Monsters and Men</p></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><p class="title">Gang Gang Schiele</p></td>
+                <td><p class="singer">혁오 (HYUKOH)</p></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><p class="title">Jeanny</p></td>
+                <td><p class="singer">Falco</p></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><p class="title">anything</p></td>
+                <td><p class="singer">Adrianne Lenker</p></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><p class="title">소랑</p></td>
+                <td><p class="singer">장필순</p></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><p class="title">Moonlight Becomes You</p></td>
+                <td><p class="singer">Eddie Higgins Trio</p></td>
+                <td></td>
+            </tr>
+
+    </tbody>
+</table>
+<script type="text/javascript">
+    // 통계
+    var prog_title = 10 < 1 ? "" : "FM4U000001323";
+    var info_prog_title = "배순탁의 B side".replace(/&amp;/g, "&");
+
+    if ((typeof nLogger) != "undefined") {
+        // 표준FM
+        if (prog_title.indexOf("STFM") > -1 || prog_title.indexOf("RASFM") > -1) {
+            nLogger.params({
+                _m6_depth1: info_prog_title,
+                _m6_depth2: "선곡표",
+                _m6_depth3: "본문"
+            });
+
+            if (!IsNethruSend) {
+                nLogger.log();
+                IsNethruSend = true;
+            }
+        }
+        // FM4U
+        else if (prog_title.indexOf("FM4U") > -1 || prog_title.indexOf("RAMFM") > -1) {
+            nLogger.params({
+                _m7_depth1: info_prog_title,
+                _m7_depth2: "선곡표",
+                _m7_depth3: "본문"
+            });
+
+            if (!IsNethruSend) {
+                nLogger.log();
+                IsNethruSend = true;
+            }
+        }
+    }
+</script>
+
+
+    <div class="link-wrap">
+        <a href='/Music?progCode=FM4U000001323&amp;page=1' class="link-list color-bg">목록</a>
+    </div>
+
+    <div class="sec-con">
+
+        <div class="list-page">
+
+                <a href='/Music/View?progCode=FM4U000001323&amp;seqID=413'>
+                    <span class="icon ico-up"></span><p class="title"><strong class="color-txt">다음글</strong>2022년 3월 2일 수요일</p><span class="date">2022-03-02</span>
+                </a>
+                            <a href='/Music/View?progCode=FM4U000001323&amp;seqID=411'>
+                    <span class="icon ico-down"></span><p class="title"><strong class="color-txt">이전글</strong>2022년 2월 26일 토요일</p><span class="date">2022-02-26</span>
+                </a>
+        </div>
+
+    </div>
+</div>
+
+
+
+        
+    <script type="text/javascript">
+        window.onload = function () {
+            var sendScripts = "";
+
+            sendScripts += "if (document.getElementById('songlist_frame') != null) { document.getElementById('songlist_frame').style.height = '" + document.body.offsetHeight + "px'; }";
+
+            var postObj = {
+                action_type: "Eval",
+                action: sendScripts
+            };
+
+            if (window.parent) {
+                window.parent.postMessage(JSON.stringify(postObj), "https://www.imbc.com");
+            }
+        }
+
+        $(document).ready(function () {
+             $.ajax({
+                type: "POST",
+                    url: '/Music/AddViewCount',
+                    data: { seqID: 412, progCode: "FM4U000001323" },
+                    success: function (data) {
+                    }
+            });
+
+            //parent.iframeLoaded();
+
+            var conH = $(".view-con").height();
+            var conT = 0;
+
+            if (conT > 100 && conH > 255){
+              $(".view-area").append( '<div class="btn-box"><button type="button" class="btn-more">내용 더보기<span class="icon ico-arrowB"></span></button></div>');
+              $(".btn-more").on('click', function(e){
+                                      e.preventDefault;
+                                      var show = $(this).parent().hasClass('on');
+                $(this).toggleClass("on");
+                                      if (show == true) {
+                    $(this).parent().removeClass('on');
+                    $(this).text('내용 더보기').append('<span class="icon ico-arrowB"></span>')
+                                          $(".view-con").css({'height':256});
+                      } else {
+                    $(this).parent().addClass('on');
+                    $(this).text('내용 닫기').append('<span class="icon ico-arrowB"></span>')
+                    $(".view-con").css({'height':'auto'});
+                }
+              })
+            } else {
+                $(".view-con").height(0);
+              return false;
+            }
+          });
+    </script>
+
+
+    </div>
+</body>
+</html>
